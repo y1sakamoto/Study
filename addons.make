@@ -1,0 +1,4 @@
+ofxAssimpModelLoader
+ofxBullet
+ofxOsc
+ofxPubSubOsc
