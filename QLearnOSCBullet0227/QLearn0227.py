@@ -10,7 +10,7 @@ from keras.models import Sequential
 from numpy.random import *
 import argparse
 import OSC
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 class QLearn:
@@ -52,13 +52,13 @@ class QLearn:
         #i=3
         x = Input(shape=(num_input,))#########input_NUM
         h = x
-        h = Dense(64, activation='tanh')(h)
-        h = Dense(64, activation='tanh')(h)
-        h = Dense(64, activation='tanh')(h)
-        h = Dense(64, activation='tanh')(h)
-        y = Dense(64,input_shape=(64,))(h)
+        h = Dense(640, activation='tanh')(h)
+        h = Dense(640, activation='tanh')(h)
+        h = Dense(640, activation='tanh')(h)
+        h = Dense(640, activation='tanh')(h)
+        y = Dense(640,input_shape=(640,))(h)
 
-        z = Dense(num_output,input_shape=(64,))(y)
+        z = Dense(num_output,input_shape=(640,))(y)
         #print('z:',z)
         #return x, z
         return x,z
@@ -106,7 +106,7 @@ class QLearn:
         self.observation=observation
         #print(type(self.poststates))
 
-        self.printStatus(observation,reward,done,info)
+        #self.printStatus(observation,reward,done,info)
 
     def printStatus(self,observation,reward,done,info):
         print("observation:",observation)

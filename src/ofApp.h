@@ -11,7 +11,6 @@
 
 
 #include "config.h"
-#include "ofxEulerAngles.h"
 
 class ofApp : public ofBaseApp{
 
@@ -48,5 +47,6 @@ class ofApp : public ofBaseApp{
     
     
         void setupOSC();
+        
     
 };

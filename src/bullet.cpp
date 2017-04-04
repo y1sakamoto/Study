@@ -7,7 +7,6 @@
 //
 
 #include "bullet.h"
-#include "ofxEulerAngles.h"
 
 bullet::bullet(){};
 /////-----------------------------------------------------------------------------------------------------------------------
@@ -228,10 +227,10 @@ void bullet::setAcceleration(int _action){
     _action=int(_action/5);
     _actions[3]=_action%5;
     
-    torque[0]=float(_actions[0]-2)*2;
-    torque[1]=float(_actions[1]-2)*2;
-    torque[2]=float(_actions[2]-2)*2;
-    torque[3]=float(_actions[3]-2)*2;
+    torque[0]=float(_actions[0]-2)*4;
+    torque[1]=float(_actions[1]-2)*4;
+    torque[2]=float(_actions[2]-2)*4;
+    torque[3]=float(_actions[3]-2)*4;
     //cout << "\t0:"<<torque[0];
     //cout << "\t1:"<<torque[1];
     //cout << "\t2:"<<torque[2];

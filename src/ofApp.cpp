@@ -28,7 +28,7 @@ void ofApp::update() {
         //for(int i=0;i<9;i++)cout <<i<<":"<< status[i]<<" ";
         //cout<<endl;
     }
-    if(abs(Bullet.getRotationSpeed())>5)Bullet.setResetFlag();
+    if(abs(Bullet.getRotationSpeed())>10)Bullet.setResetFlag();
     
     //Bullet.getRotationSpeed();
 
